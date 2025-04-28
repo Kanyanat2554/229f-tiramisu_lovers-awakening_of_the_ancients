@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      8bit-water-texture-sq_0: -8922150333656570882
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

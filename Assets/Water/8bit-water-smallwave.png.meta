@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      8bit-water-smallwave_0: 345938764536490187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

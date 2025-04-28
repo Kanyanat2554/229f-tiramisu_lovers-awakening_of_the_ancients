@@ -262,7 +262,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      xhairs04s_2_0: 1977304126884701235
+      xhairs04s_2_1: -5329502581392497804
+      xhairs04s_2_2: -1253043154099890710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

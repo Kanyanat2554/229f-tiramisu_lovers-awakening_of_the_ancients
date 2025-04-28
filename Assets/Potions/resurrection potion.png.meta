@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      resurrection potion_0: -7974375077307904061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

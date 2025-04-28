@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      8bit-water-wavy_0: 3448865328750030966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
