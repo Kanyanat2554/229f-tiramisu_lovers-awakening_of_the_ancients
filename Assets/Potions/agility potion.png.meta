@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      agility potion_0: 6180334524495757686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

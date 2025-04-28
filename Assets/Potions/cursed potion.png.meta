@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cursed potion_0: 352424533251636696
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

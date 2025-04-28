@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      luck potion_0: 8191540739243909039
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

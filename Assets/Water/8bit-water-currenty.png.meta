@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      8bit-water-currenty_0: -4129257114714286412
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

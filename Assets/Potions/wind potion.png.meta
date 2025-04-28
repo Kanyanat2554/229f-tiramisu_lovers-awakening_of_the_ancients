@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wind potion_0: -6835214464314942422
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
