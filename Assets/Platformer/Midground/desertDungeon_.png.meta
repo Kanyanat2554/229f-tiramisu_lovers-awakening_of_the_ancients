@@ -193,12 +193,12 @@ TextureImporter:
       name: desertDungeon__0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 105
-        width: 96
-        height: 7
+        x: 48
+        y: 106
+        width: 48
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: desertDungeon__1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 84
-        width: 96
-        height: 13
+        x: 48
+        y: 85
+        width: 48
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: desertDungeon__2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 68
-        width: 96
-        height: 13
+        x: 48
+        y: 69
+        width: 48
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: desertDungeon__3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 52
-        width: 96
-        height: 13
+        x: 48
+        y: 53
+        width: 48
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: desertDungeon__4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 48
         y: 0
-        width: 96
-        height: 49
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -303,7 +303,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fe03c183bc3a46040bbd766ba0d57f71
     internalID: 0
     vertices: []
     indices: 
