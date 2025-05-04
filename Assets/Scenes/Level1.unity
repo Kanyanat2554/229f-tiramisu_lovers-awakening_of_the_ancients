@@ -18886,13 +18886,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
+  RunMultiplier: 1.5
   JumpForce: 13
   IsJumping: 0
-  groundCheck: {fileID: 1157057732}
-  groundCheckRadius: 0.2
-  groundLayer:
+  GroundCheck: {fileID: 1157057732}
+  GroundCheckRadius: 0.2
+  GroundLayer:
     serializedVersion: 2
     m_Bits: 256
+  Stamina: 100
+  MaxStamina: 100
+  StaminaDrainRate: 20
+  StaminaRecoverRate: 10
 --- !u!50 &1052530984
 Rigidbody2D:
   serializedVersion: 5
