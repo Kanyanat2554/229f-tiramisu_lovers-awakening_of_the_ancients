@@ -37556,6 +37556,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!1 &45300002345886963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7493140502449641639, guid: 10376a466a633c149adffd548dde93be, type: 3}
+  m_PrefabInstance: {fileID: 2322986437257787049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2322986437257787049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37564,9 +37569,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66240726352951805, guid: 10376a466a633c149adffd548dde93be, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493140502449641639, guid: 10376a466a633c149adffd548dde93be, type: 3}
       propertyPath: m_Name
-      value: PF Props Wooden Gate
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 7737009135310584492, guid: 10376a466a633c149adffd548dde93be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37611,7 +37620,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7493140502449641639, guid: 10376a466a633c149adffd548dde93be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9062703040237709262}
   m_SourcePrefab: {fileID: 100100000, guid: 10376a466a633c149adffd548dde93be, type: 3}
 --- !u!1001 &3217361345289342080
 PrefabInstance:
@@ -37674,6 +37686,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73bb82977454edc4c8a03ad9efa6846d, type: 3}
+--- !u!114 &9062703040237709262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45300002345886963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a09eb93f5709104d87b3c6836c5d81a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
