@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     float move;
     private bool isRunning;
+    public bool facingRight = true;
 
     public float JumpForce;
     public bool IsJumping;
@@ -34,25 +35,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //walk with addforce
-        /*moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        rb2d.AddForce(moveInput * Speed);*/
-
-        /*IsJumping = !Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-
-        //use rigidbody2d to move left and right (x-axis)
-        move = Input.GetAxis("Horizontal"); //x - axis
-        rb2d.linearVelocity = new Vector2(move * Speed, rb2d.linearVelocity.y);
-
-        //jump
-        if (Input.GetButtonDown("Jump") && !IsJumping)
-        {
-            //rb2d.AddForce(new Vector2(rb2d.linearVelocity.x, JumpForce));
-            rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, JumpForce);
-
-            Debug.Log("Jump");
-        }*/
-
         bool grounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, GroundLayer);
         IsJumping = !grounded;
 
@@ -83,6 +65,15 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Debug.Log("Stamina: " + Stamina);
+
+        if (move > 0 && !facingRight)
+        {
+            Flip();
+        }
+        else if (move < 0 && facingRight)
+        {
+            Flip();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -99,5 +90,13 @@ public class PlayerMovement : MonoBehaviour
         {
             IsJumping = true;
         }
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 }
