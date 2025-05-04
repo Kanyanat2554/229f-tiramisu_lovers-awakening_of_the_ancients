@@ -4,7 +4,7 @@ public class MummyLevelOne : MonoBehaviour
 {
     public GameObject mummyBulletPrefab;  
     public Transform shootPoint;             
-    public float shootInterval = 1f;    
+    public float shootInterval = 0.5f;    
     public float projectileSpeed = 10f;  
 
     private Transform target;
@@ -22,6 +22,7 @@ public class MummyLevelOne : MonoBehaviour
                 ShootPlayer();
                 shootTimer = 0f;
             }
+           
         }
     }
 

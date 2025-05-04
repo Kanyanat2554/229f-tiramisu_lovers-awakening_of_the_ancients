@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3542279420112533420}
   - component: {fileID: 7939649716555799369}
   - component: {fileID: 1829689851509751309}
+  - component: {fileID: 1147933616193344873}
   m_Layer: 3
   m_Name: PlayerBullet 1
   m_TagString: Bullet
@@ -193,3 +194,17 @@ PolygonCollider2D:
       - {x: -0.325, y: -0.19999999}
       - {x: -0.36499998, y: -0.14}
   m_UseDelaunayMesh: 0
+--- !u!114 &1147933616193344873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4276902645063245185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7a07b729c0f2d4981d39c70483ff4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 5
+  destroyOnHit: 1
