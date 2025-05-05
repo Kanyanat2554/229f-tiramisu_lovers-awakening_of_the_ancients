@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class MummyLevelOne : MonoBehaviour
+public class MummyShoot : MonoBehaviour
 {
     public GameObject mummyBulletPrefab;  
     public Transform shootPoint;             
-    public float shootInterval = 0.5f;    
-    public float projectileSpeed = 10f;  
+    [SerializeField] public float shootInterval;    
+    [SerializeField] public float projectileSpeed;  
 
     private Transform target;
     private bool isPlayerInRange = false;

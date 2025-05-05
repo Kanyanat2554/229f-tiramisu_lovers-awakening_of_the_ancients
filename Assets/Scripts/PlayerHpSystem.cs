@@ -66,7 +66,7 @@ public class PlayerHpSystem : MonoBehaviour
         Debug.Log("Player Died!");
         PlayerPrefs.DeleteKey("PlayerHp");
         SceneManager.LoadScene("Lose");
-        Ring.collectedRings = 0;
+        Treasure.collectedTreasures = 0;
     }
 
     /*private void FindHealthBar()

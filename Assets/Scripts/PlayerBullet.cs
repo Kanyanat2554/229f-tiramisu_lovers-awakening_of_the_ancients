@@ -9,7 +9,7 @@ public class PlayerBullet : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            var damageable = other.GetComponent<EnemyHpSystem>();
+            var damageable = other.GetComponent<MummyHpSystem>();
             if (damageable != null)
             {
                 damageable.TakeDamage(damageAmount);

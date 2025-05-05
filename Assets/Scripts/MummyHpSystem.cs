@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHpSystem : MonoBehaviour
+public class MummyHpSystem : MonoBehaviour
 {
     [SerializeField] public int maxHp;
     private int currentHp;

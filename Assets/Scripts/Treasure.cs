@@ -1,19 +1,19 @@
 using UnityEngine;
 
-public class Ring : MonoBehaviour
+public class Treasure : MonoBehaviour
 {
-    public static int collectedRings = 0;
+    public static int collectedTreasures = 0;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            collectedRings++;
-            Debug.Log($"Rings collected: {collectedRings}");
+            collectedTreasures++;
+            Debug.Log($"Rings collected: {collectedTreasures}");
 
             Destroy(gameObject);
 
-            if (collectedRings >= 2)
+            if (collectedTreasures >= 6)
             {
                 RemoveBarrier();
             }

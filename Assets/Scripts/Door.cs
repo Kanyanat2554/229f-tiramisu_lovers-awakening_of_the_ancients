@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DoorLevelOne : MonoBehaviour
+public class Door : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
