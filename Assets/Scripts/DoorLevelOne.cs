@@ -7,7 +7,7 @@ public class DoorLevelOne : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

@@ -13,7 +13,7 @@ public class Ring : MonoBehaviour
 
             Destroy(gameObject);
 
-            if (collectedRings >= 3)
+            if (collectedRings >= 2)
             {
                 RemoveBarrier();
             }
