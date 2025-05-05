@@ -6321,6 +6321,8 @@ GameObject:
   m_Component:
   - component: {fileID: 80646148}
   - component: {fileID: 80646147}
+  - component: {fileID: 80646150}
+  - component: {fileID: 80646149}
   m_Layer: 0
   m_Name: Trampoline
   m_TagString: Untagged
@@ -6398,6 +6400,97 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!249 &80646149
+AreaEffector2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80646146}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGlobalAngle: 0
+  m_ForceAngle: 90
+  m_ForceMagnitude: 700
+  m_ForceVariation: 0
+  m_ForceTarget: 0
+  m_Drag: 0
+  m_AngularDrag: 0
+--- !u!60 &80646150
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80646146}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.28, y: 0.28}
+    newSize: {x: 0.28, y: 0.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.11047132, y: -0.037347592}
+      - {x: 0.10230587, y: -0.037333593}
+      - {x: 0.10181519, y: -0.02793572}
+      - {x: -0.11052826, y: -0.028613627}
+      - {x: -0.11069771, y: -0.0386581}
+      - {x: -0.12157702, y: -0.037845206}
+      - {x: -0.12135013, y: -0.0700702}
+      - {x: -0.11114376, y: -0.06966301}
+      - {x: -0.11153492, y: -0.079903446}
+      - {x: -0.020599186, y: -0.08103941}
+      - {x: -0.02079922, y: -0.107419185}
+      - {x: -0.030965067, y: -0.10876635}
+      - {x: -0.03125862, y: -0.11917307}
+      - {x: -0.04104988, y: -0.119685784}
+      - {x: -0.041580997, y: -0.14}
+      - {x: 0.031317376, y: -0.14}
+      - {x: 0.03154347, y: -0.11836295}
+      - {x: 0.020222181, y: -0.11874397}
+      - {x: 0.020126045, y: -0.10796265}
+      - {x: 0.0112062525, y: -0.1077529}
+      - {x: 0.010584652, y: -0.081302844}
+      - {x: 0.102406785, y: -0.08108044}
+      - {x: 0.10238874, y: -0.07160613}
+      - {x: 0.11103959, y: -0.07204955}
+  m_UseDelaunayMesh: 0
 --- !u!1 &84922540
 GameObject:
   m_ObjectHideFlags: 0
@@ -64561,7 +64654,7 @@ Transform:
   m_GameObject: {fileID: 1052530979}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1316323, y: -38.456757, z: 0}
+  m_LocalPosition: {x: 19.97, y: -14.77, z: 0}
   m_LocalScale: {x: 6.320068, y: 6.320068, z: 6.320068}
   m_ConstrainProportionsScale: 0
   m_Children:
