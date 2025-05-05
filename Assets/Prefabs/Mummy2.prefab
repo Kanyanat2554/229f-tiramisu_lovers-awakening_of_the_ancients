@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7237131246489861722}
   m_Layer: 0
   m_Name: Mummy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mummyBulletPrefab: {fileID: 7517175969930845336, guid: ce9985dd978357446a2a7f9035fff975, type: 3}
   shootPoint: {fileID: 0}
-  shootInterval: 0.3
+  shootInterval: 0.5
   projectileSpeed: 12
 --- !u!1 &7744507095247730428
 GameObject:
