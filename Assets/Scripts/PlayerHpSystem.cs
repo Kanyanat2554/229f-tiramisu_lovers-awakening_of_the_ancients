@@ -13,15 +13,18 @@ public class PlayerHpSystem : MonoBehaviour
 
     private void Awake()
     {
+        MaxHp = 100;
         PlayerPrefs.DeleteKey("PlayerHp"); //test
 
         if (!PlayerPrefs.HasKey("PlayerHp"))
         {
-            PlayerPrefs.SetInt("PlayerHp", 100);
+            CurrentHp = MaxHp;
+            PlayerPrefs.SetInt("PlayerHp", CurrentHp);
         }
-
-        CurrentHp = PlayerPrefs.GetInt("PlayerHp");
-        MaxHp = 100;
+        else
+        {
+            CurrentHp = PlayerPrefs.GetInt("PlayerHp");
+        }
 
         rb = GetComponent<Rigidbody2D>();
 
@@ -32,12 +35,13 @@ public class PlayerHpSystem : MonoBehaviour
             healthBar.SetHealth(CurrentHp);
         }*/
 
-        Debug.Log($"({this} has {CurrentHp} HP left)");
+        Debug.Log($"Player HP: {CurrentHp}/{MaxHp}");
     }
 
     public virtual void TakeDamage(int damage)
     {
         CurrentHp -= damage;
+        CurrentHp = Mathf.Clamp(CurrentHp, 0, MaxHp);
         PlayerPrefs.SetInt("PlayerHp", CurrentHp);
         PlayerPrefs.Save();
 
@@ -54,6 +58,15 @@ public class PlayerHpSystem : MonoBehaviour
         }
 
         Debug.Log($"({this} has {CurrentHp} HP left)");
+    }
+
+    public void Heal(int amount)
+    {
+        CurrentHp += amount;
+        CurrentHp = Mathf.Clamp(CurrentHp, 0, MaxHp);
+
+        PlayerPrefs.SetInt("PlayerHp", CurrentHp);
+        PlayerPrefs.Save();
     }
 
     public bool IsDead()
