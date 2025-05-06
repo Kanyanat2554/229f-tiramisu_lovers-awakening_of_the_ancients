@@ -8,8 +8,9 @@ public class PlayerHpSystem : MonoBehaviour
     public int MaxHp { get; protected set; }
 
     public Rigidbody2D rb;
-    //public HealthBar healthBar;
-    //private GameObject healthBarUI;
+
+    public HealthBar healthBar;
+    private GameObject healthBarUI;
 
     private void Awake()
     {
@@ -28,12 +29,12 @@ public class PlayerHpSystem : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
 
-        /*
+        
         if (healthBar != null)
         {
             healthBar.SetMaxHealth(MaxHp);
             healthBar.SetHealth(CurrentHp);
-        }*/
+        }
 
         Debug.Log($"Player HP: {CurrentHp}/{MaxHp}");
     }
@@ -45,15 +46,15 @@ public class PlayerHpSystem : MonoBehaviour
         PlayerPrefs.SetInt("PlayerHp", CurrentHp);
         PlayerPrefs.Save();
 
-        /*
+        
         if (healthBar != null)
         {
             healthBar.SetHealth(CurrentHp);
-        }*/
+        }
 
         if (IsDead())
         {
-            //HideHealthBar();
+            HideHealthBar();
             Die();
         }
 
@@ -82,7 +83,7 @@ public class PlayerHpSystem : MonoBehaviour
         Treasure.collectedTreasures = 0;
     }
 
-    /*private void FindHealthBar()
+    private void FindHealthBar()
     {
         GameObject canvas = GameObject.Find("UI_Canvas");
         if (canvas != null)
@@ -119,5 +120,5 @@ public class PlayerHpSystem : MonoBehaviour
         {
             healthBarUI.SetActive(false);
         }
-    }*/
+    }
 }

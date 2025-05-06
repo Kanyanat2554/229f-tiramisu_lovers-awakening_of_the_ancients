@@ -354,7 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mummyBulletPrefab: {fileID: 7517175969930845336, guid: ce9985dd978357446a2a7f9035fff975, type: 3}
   shootPoint: {fileID: 0}
-  shootInterval: 0.5
+  shootInterval: 0.8
   projectileSpeed: 12
 --- !u!1 &7744507095247730428
 GameObject:

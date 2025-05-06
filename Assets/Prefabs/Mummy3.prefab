@@ -373,5 +373,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mummyBulletPrefab: {fileID: 5427051282187927863, guid: 73a8bffef8fca214b940e0a19df7d091, type: 3}
   shootPoint: {fileID: 3967453900395990640}
-  shootInterval: 0.3
+  shootInterval: 0.5
   projectileSpeed: 15
