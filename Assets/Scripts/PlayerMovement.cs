@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float Speed;
+    public float Speed = 5f;
+    public float MaxSpeed = 5f;
     public float RunMultiplier = 1.5f;
 
     Vector2 moveInput;
@@ -30,6 +31,15 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+
+        MaxSpeed = 5f;
+
+        if (PlayerPrefs.GetInt("HasSpeedPotion", 0) == 1)
+        {
+            MaxSpeed *= 1.5f;
+        }
+
+        Speed = MaxSpeed;
     }
 
     // Update is called once per frame
