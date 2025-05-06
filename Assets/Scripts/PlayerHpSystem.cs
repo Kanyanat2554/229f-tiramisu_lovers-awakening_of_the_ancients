@@ -33,7 +33,7 @@ public class PlayerHpSystem : MonoBehaviour
         if (healthBar != null)
         {
             healthBar.SetMaxHealth(MaxHp);
-            healthBar.SetHealth(CurrentHp);
+            healthBar.UpdateHealthBar(CurrentHp);
         }
 
         Debug.Log($"Player HP: {CurrentHp}/{MaxHp}");
@@ -49,7 +49,7 @@ public class PlayerHpSystem : MonoBehaviour
         
         if (healthBar != null)
         {
-            healthBar.SetHealth(CurrentHp);
+            healthBar.UpdateHealthBar(CurrentHp);
         }
 
         if (IsDead())
@@ -94,7 +94,7 @@ public class PlayerHpSystem : MonoBehaviour
             if (healthBar != null)
             {
                 healthBar.SetMaxHealth(MaxHp);
-                healthBar.SetHealth(CurrentHp);
+                healthBar.UpdateHealthBar(CurrentHp);
             }
         }
     }
