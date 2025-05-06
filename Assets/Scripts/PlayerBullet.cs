@@ -2,8 +2,17 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
-    public int damageAmount = 5;       
-    //public bool destroyOnHit = true;         
+    public int damageAmount = 5;
+    //public bool destroyOnHit = true;
+    private void Start()
+    {
+        if (PlayerPrefs.GetInt("HasStrengthPotion", 0) == 1)
+        {
+            damageAmount *= 2;
+        }
+
+        Debug.Log($"damageAmount = {damageAmount}");
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
