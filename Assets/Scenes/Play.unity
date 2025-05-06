@@ -64869,7 +64869,7 @@ Transform:
   m_GameObject: {fileID: 1052530979}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.06, y: -38.538, z: 0}
+  m_LocalPosition: {x: -6.1, y: -38.39, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -142914,6 +142914,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2059029939339653852, guid: 73bb82977454edc4c8a03ad9efa6846d, type: 3}
+      propertyPath: m_Size.x
+      value: 16.472698
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059029939339653852, guid: 73bb82977454edc4c8a03ad9efa6846d, type: 3}
+      propertyPath: m_Size.y
+      value: 17.314255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059029939339653852, guid: 73bb82977454edc4c8a03ad9efa6846d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.039062023
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059029939339653852, guid: 73bb82977454edc4c8a03ad9efa6846d, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.44911
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059029939339653852, guid: 73bb82977454edc4c8a03ad9efa6846d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5737031592922004969, guid: 73bb82977454edc4c8a03ad9efa6846d, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.13402979
@@ -143280,6 +143300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a09eb93f5709104d87b3c6836c5d81a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requiredTreasures: 6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

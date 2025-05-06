@@ -9,7 +9,7 @@ public class Treasure : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             collectedTreasures++;
-            Debug.Log($"Rings collected: {collectedTreasures}");
+            Debug.Log($"Treasure collected: {collectedTreasures}");
 
             Destroy(gameObject);
 
