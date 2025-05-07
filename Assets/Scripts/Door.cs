@@ -11,7 +11,7 @@ public class Door : MonoBehaviour
         {
             if (Treasure.collectedTreasures >= requiredTreasures)
             {
-                SceneManager.LoadScene("MainMenu"); 
+                SceneManager.LoadScene("Win"); 
             }
         }
     }
