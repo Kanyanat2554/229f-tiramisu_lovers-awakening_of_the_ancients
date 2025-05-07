@@ -7,6 +7,8 @@ public class MainMenu : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
 
+        PlayerDamageStats.damageAmount = 5;
+
         SceneManager.LoadScene("Play");
     }
 }
