@@ -8,6 +8,4 @@ public class MummyBullet : MonoBehaviour
     {
         Destroy(gameObject, lifetime);
     }
-
-   
 }

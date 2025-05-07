@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         
-
         MaxSpeed = 5f;
 
         if (PlayerPrefs.GetInt("HasSpeedPotion", 0) == 1)
@@ -50,9 +49,7 @@ public class PlayerMovement : MonoBehaviour
         {
             StaminaBar.maxValue = MaxStamina;
             StaminaBar.value = Stamina;
-        }
-
-        
+        }  
     }
 
     // Update is called once per frame
@@ -132,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = theScale;
     }
 
-    //Display UI speed
+    //Display UI speed, attack, required items
     [SerializeField] TextMeshProUGUI atkTxt, spdTxt, itemsTxt;
 
 

@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHpSystem : MonoBehaviour
 {
-    // HP System
     public int CurrentHp { get; protected set; }
     public int MaxHp { get; protected set; }
 

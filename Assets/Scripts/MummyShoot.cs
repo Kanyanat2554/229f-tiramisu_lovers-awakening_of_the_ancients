@@ -42,15 +42,6 @@ public class MummyShoot : MonoBehaviour
         }
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            target = collision.transform;
-            isPlayerInRange = true;
-        }
-    }*/
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !isPlayerInRange)
