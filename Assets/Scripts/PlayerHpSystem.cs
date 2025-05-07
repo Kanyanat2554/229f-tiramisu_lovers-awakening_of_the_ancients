@@ -68,6 +68,12 @@ public class PlayerHpSystem : MonoBehaviour
 
         PlayerPrefs.SetInt("PlayerHp", CurrentHp);
         PlayerPrefs.Save();
+
+        if (healthBar != null)
+        {
+            healthBar.UpdateHealthBar(CurrentHp);
+        }
+
     }
 
     public bool IsDead()
