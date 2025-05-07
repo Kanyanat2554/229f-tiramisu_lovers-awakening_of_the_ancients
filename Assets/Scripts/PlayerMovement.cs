@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,8 +23,10 @@ public class PlayerMovement : MonoBehaviour
     //Stamina System
     public float Stamina = 100f;
     public float MaxStamina = 100f;
-    public float StaminaDrainRate = 20f;
+    public float StaminaDrainRate = 45f;
     public float StaminaRecoverRate = 10f;
+    
+    [SerializeField] public Slider StaminaBar;
 
     Rigidbody2D rb2d;
 
@@ -31,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        
 
         MaxSpeed = 5f;
 
@@ -40,6 +44,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Speed = MaxSpeed;
+
+        if (StaminaBar != null)
+        {
+            StaminaBar.maxValue = MaxStamina;
+            StaminaBar.value = Stamina;
+        }
     }
 
     // Update is called once per frame
@@ -65,6 +75,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Stamina += StaminaRecoverRate * Time.deltaTime;
             Stamina = Mathf.Clamp(Stamina, 0f, MaxStamina);
+        }
+
+        if (StaminaBar != null)
+        {
+            StaminaBar.value = Stamina;
         }
 
         rb2d.linearVelocity = new Vector2(move * currentSpeed, rb2d.linearVelocity.y);
