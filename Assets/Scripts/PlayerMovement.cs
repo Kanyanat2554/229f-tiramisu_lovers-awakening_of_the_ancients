@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -50,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
             StaminaBar.maxValue = MaxStamina;
             StaminaBar.value = Stamina;
         }
+
+        
     }
 
     // Update is called once per frame
@@ -99,6 +102,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
+
+        UpdateSpeedText();
+        UpdateAttackText();
+        UpdateItemsText();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -123,5 +130,24 @@ public class PlayerMovement : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    //Display UI speed
+    [SerializeField] TextMeshProUGUI atkTxt, spdTxt, itemsTxt;
+
+
+    private void UpdateSpeedText()
+    {
+        spdTxt.text = $"SPD: {Speed}";
+    }
+
+    private void UpdateAttackText()
+    {
+        atkTxt.text = $"ATK: {PlayerDamageStats.damageAmount}";
+    }
+
+    private void UpdateItemsText()
+    {
+        itemsTxt.text = $"Items: {Treasure.collectedTreasures}/6";
     }
 }

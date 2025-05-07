@@ -6,20 +6,12 @@ public class StrengthPotion : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            
             PlayerPrefs.SetInt("HasStrengthPotion", 1);
             PlayerPrefs.Save();
 
-            
-            PlayerBullet playerBullet = collision.GetComponent<PlayerBullet>();
-            if (playerBullet != null)
-            {
-                
-                playerBullet.damageAmount *= 2;
-                Debug.Log($"[StrengthPotion] Bullet damage set to: {playerBullet.damageAmount}");
-            }
+            PlayerDamageStats.damageAmount *= 2;
+            Debug.Log($"New player damage: {PlayerDamageStats.damageAmount}");
 
-            // ทำลาย Potion
             Destroy(gameObject);
         }
     }
